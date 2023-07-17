@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<title>My Playlist Project</title>
+</head>
+<body>
+<h3 style="color: blue">Alternative Facts</h3>
+<p>My Playlist Organization</p>
+<p>The name summarizes what my playlist is about in two words.</p>
+<p>A lot of 21 Pilots' songs are rocky and about depression and how to handle it. That's why a lot of my playlist is just their songs.</p>
+<p>They represent something that is worthwhile to move on from. Finding their setlist for The Icy Tour was easy. It took basic research.</p>
+<p>168/8=21. This project is organized by 8 tables of 21 values each for 6 categories. There are 48 screenshots and 1, 008 individual values.</p>
+<p>My playlist is organized alphabetically by song name. Instead of by artist. That makes it more interesting than monotonous.</p>
+<p>My playlist lasts for 10 hours and 33 minutes. It consists of several Twenty One Pilots' songs and several songs by other artists.</p>
+<p>My playlist is balanced between happy and sad songs. It is balanced between fast and slow songs.</p>
+<p>Reading lyrics and listening reveals a topic. By inductive reasoning. Working backwards from conclusions to ideas. What I think the songs are about.</p>
+<button id="mynewbutton" onclick="callData()">callData</button>
+<script>
+function callData() {
+const imageId = document.getElementById("mynewimage");
+let button = document.getElementById("mynewbutton");
+button.addEventListener('click', () => {
+let myNames = document.getElementsByName("myradio");
+myNames.forEach((myradio) => {
+if(myradio.checked) {
+imageId.src = myradio.value;
+console.log(myradio.value);
+}
+})
+});
+}
+</script>
+<table>
+<tr>
+<td>
+<p>
+    <input type="radio" name="myradio" value="Artists One Screenshot.png">Artists One</input><br>
+    <input type="radio" name="myradio" value="Artists Two Screenshot.png">Artists Two</input><br>
+    <input type="radio" name="myradio" value="Artists Three Screenshot.png">Artists Three</input><br>
+    <input type="radio" name="myradio" value="Artists Four Screenshot.png">Artists Four</input><br>
+    <input type="radio" name="myradio" value="Artists Five Screenshot.png">Artists Five</input><br>
+    <input type="radio" name="myradio" value="Artists Six Screenshot.png">Artists Six</input><br>
+    <input type="radio" name="myradio" value="Artists Seven Screenshot.png">Artists Seven</input><br>
+    <input type="radio" name="myradio" value="Artists Eight Screenshot.png">Artists Eight</input><br>
+</p>
+
+<p>
+    <input type="radio" name="myradio" value="Names One Screenshot.png">Names One</input><br>
+    <input type="radio" name="myradio" value="Names Two Screenshot.png">Names Two</input><br>
+    <input type="radio" name="myradio" value="Names Three Screenshot.png">Names Three</input><br>
+    <input type="radio" name="myradio" value="Names Four Screenshot.png">Names Four</input><br>
+    <input type="radio" name="myradio" value="Names Five Screenshot.png">Names Five</input><br>
+    <input type="radio" name="myradio" value="Names Six Screenshot.png">Names Six</input><br>
+    <input type="radio" name="myradio" value="Names Seven Screenshot.png">Names Seven</input><br>
+    <input type="radio" name="myradio" value="Names Eight Screenshot.png">Names Eight</input><br>
+</p>
+
+<p>
+    <input type="radio" name="myradio" value="Keys One Screenshot.png">Keys One</input><br>
+    <input type="radio" name="myradio" value="Keys Two Screenshot.png">Keys Two</input><br>
+    <input type="radio" name="myradio" value="Keys Three Screenshot.png">Keys Three</input><br>
+    <input type="radio" name="myradio" value="Keys Four Screenshot.png">Keys Four</input><br>
+    <input type="radio" name="myradio" value="Keys Five Screenshot.png">Keys Five</input><br>
+    <input type="radio" name="myradio" value="Keys Six Screenshot.png">Keys Six</input><br>
+    <input type="radio" name="myradio" value="Keys Seven Screenshot.png">Keys Seven</input><br>
+    <input type="radio" name="myradio" value="Keys Eight Screenshot.png">Keys Eight</input><br>
+</p>
+
+<p>
+    <input type="radio" name="myradio" value="Tempo One Screenshot.png">Tempo One</input><br>
+    <input type="radio" name="myradio" value="Tempo Two Screenshot.png">Tempo Two</input><br>
+    <input type="radio" name="myradio" value="Tempo Three Screenshot.png">Tempo Three</input><br>
+    <input type="radio" name="myradio" value="Tempo Four Screenshot.png">Tempo Four</input><br>
+    <input type="radio" name="myradio" value="Tempo Five Screenshot.png">Tempo Five</input><br>
+    <input type="radio" name="myradio" value="Tempo Six Screenshot.png">Tempo Six</input><br>
+    <input type="radio" name="myradio" value="Tempo Seven Screenshot.png">Tempo Seven</input><br>
+    <input type="radio" name="myradio" value="Tempo Eight Screenshot.png">Tempo Eight</input><br>
+</p>
+
+<p>
+    <input type="radio" name="myradio" value="Context One Screenshot.png">Context One</input><br>
+    <input type="radio" name="myradio" value="Context Two Screenshot.png">Context Two</input><br>
+    <input type="radio" name="myradio" value="Context Three Screenshot.png">Context Three</input><br>
+    <input type="radio" name="myradio" value="Context Four Screenshot.png">Context Four</input><br>
+    <input type="radio" name="myradio" value="Context Five Screenshot.png">Context Five</input><br>
+    <input type="radio" name="myradio" value="Context Six Screenshot.png">Context Six</input><br>
+    <input type="radio" name="myradio" value="Context Seven Screenshot.png">Context Seven</input><br>
+    <input type="radio" name="myradio" value="Context Eight Screenshot.png">Context Eight</input><br>
+</p>
+
+<p>
+    <input type="radio" name="myradio" value="Lyrics One Screenshot.png">Lyrics One</input><br>
+    <input type="radio" name="myradio" value="Lyrics Two Screenshot.png">Lyrics Two</input><br>
+    <input type="radio" name="myradio" value="Lyrics Three Screenshot.png">Lyrics Three</input><br>
+    <input type="radio" name="myradio" value="Lyrics Four Screenshot.png">Lyrics Four</input><br>
+    <input type="radio" name="myradio" value="Lyrics Five Screenshot.png">Lyrics Five</input><br>
+    <input type="radio" name="myradio" value="Lyrics Six Screenshot.png">Lyrics Six</input><br>
+    <input type="radio" name="myradio" value="Lyrics Seven Screenshot.png">Lyrics Seven</input><br>
+    <input type="radio" name="myradio" value="Lyrics Eight Screenshot.png">Lyrics Eight</input><br>
+</p>
+</td>
+<td>
+<img id="mynewimage"></img>
+</td>
+<td>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/avp/pl.u-NpXm9RGumklPVEj"></iframe>
+</td>
+</tr>
+</table>
+</body>
+</html>
