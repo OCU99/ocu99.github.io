@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<head>
+<script>
+        function callData() {
+	const myarea = document.getElementById("mytextarea");	
+	let btn = document.getElementById("mybutton");
+	btn.addEventListener('click', () => {
+	let mynames = document.getElementsByName("myradio");
+	mynames.forEach((myradio) => {
+	if (myradio.checked) {
+	myarea.src = myradio.value;
+	myarea.value = myarea.src;
+	}
+      })
+   });
+ }
+</script>
+</head>
+<body>
+<h3 style="color: blue">Let's Go Twenty One Pilots</h3>
+<p><b>Disclaimer</b>&nbspTwenty One Pilots mostly write songs about depression. And how to successfully handle it. They represent something worthwhile to move on from.</p>
+<p>My best recommendation is to view this webpage "free time" project on a computer. To dynamically change the text area size. To fit the song data that is pulled into it.</p>
+<p>88 songs x 5 categories = 440 data values. 8 sets of context + 8 sets of lyrics + 9 sets of decibels + 9 sets of keys + 10 sets of tempo = 44 datasets. 440/44 = 10 values on average.</p>
+<p>A decibel is a numeric measurement of how loud or soft a sound is. The daily limit to protect hearing is 70 dB. It's an objective way to see what the volume should be set to.</p>
+<button id="mybutton" onclick="callData()">Data</button><br>
+<table>
+<tr>
+<td>
+<p>	
+	<input type="radio" name="myradio" 
+	value="A Car, a Torch, a Death - It is a sad song. It is metaphorical.
+Addict With a Pen - It uses a metaphor of a desert in his mind. It makes you think about water differently.
+Air Catcher - It is a sad song about falling emotionally.
+At the Risk of Feeling Dumb - It's about not wanting to lose a friend, so instead checking to see if they're okay.
+Backslide - It's about not wanting to have a behavioral regression.
+Bandito - It's about going low emotionally without wanting to.
+Bounce Man - It's about feeling okay with having an avoidant personality.
+Cancer - It's descriptions of what having cancer is like are metaphorical for depression.
+Car Radio - The extended metaphor of the car radio is most likely telling the listener to think through their actions more carefully.
+Center Mass - It's about having a method to deal with painful feelings.
+Chlorine - If it's taken metaphorically, then it could be about songwriting itself.">Context A-C</input><br>
+    	<input type="radio" name="myradio" 
+	value="Choker - It's about having an avoidant personality and side effects of it.
+Christmas Saves the Year - It's about how the ending of a year can sometimes be the best part of it.
+Cottonwood - It's about a sadness because someone else's behaviors are only worsening somehow.
+Cut my Lip - It's a song about self-sabotage.
+Days lie Dormant - It's about not wanting to waste time.
+Doubt - It's describing depression but at least it sounds techno.
+Downstairs - It's about finding space to recover from negative feelings or emotions.
+Drum Show - It's about having coping techniques that don't work exactly like they're supposed to.
+Fairly Local - It's most likely about feeling confused because the lyrics say one thing then they say the exact opposite.
+Fake you Out - It's about feeling distanced from other people.
+Fall Away - It's about falling emotionally without actually wanting to do so.">Context C-F</input><br>
+    	<input type="radio" name="myradio" 
+	value="Formidable - It's about someone who is intimidated by someone else.
+Friend, Please - It's about someone who doesn't want to lose someone else.
+Garbage - It's describing feeling extreme insecurities.
+Goner - It's about intense feelings of loneliness.
+Good Day - It's about having a good day but others not believing you. Which is possible.
+Guns for Hands - It's about redirecting suicidal feelings into something positive instead. In my opinion, America needs more Guns For Hands instead of real ones.
+Heathens - It's describing what having a criminal history might be like.
+Heavydirtysoul - It's about wanting someone else's help without being sure how they can. Which is also possible.
+Holding on to You - It's about holding onto hope through difficult situations. Sometimes that's all someone has.
+Hometown - It's most likely about lacking a sense of belonging.
+House of Gold - It's a very positive song about chasing dreams.">Context F-H</input><br>
+    	<input type="radio" name="myradio" 
+	value="Johnny Boy - It's about trying to save someone else from their depression if possible.
+Jumpsuit - The extended metaphor of the jumpsuit is most likely for depressive feelings.
+Lane Boy - It's a very fast and distressed song by TØP.
+Lavish - It's describing having an extravagant lifestyle without feeling satisfied by it.
+Leave the City - It's about an intense sadness.
+Legend - It's about someone who wants to see someone else again someday.
+Level of Concern - In the TØP concert I fortunately attended, Tyler Joseph said he wrote it about the Covid-19 pandemic.
+Levitate - It's creatively describing how to act more confident instead.
+March to the Sea - It's about cyclic depression.
+Message Man - It's about fighting against suicidal feelings.
+Midwest Indigo - It's describing a deeper sadness than what's happened before.">Context J-M</input><br>
+    	<input type="radio" name="myradio" 
+	value="Migraine - It's a faster song about fighting against suicidal feelings.
+Morph - It's describing depression. In my opinion, the 'ones and zeroes' part might reference binary thinking.
+Mulberry Street - It's about taking a different perspective.
+My Blood - It's a rock song about loyalty.
+Navigating - It's describing possible side effects of having a disassociation.
+Neon Gravestones - It's about celebrating life instead of glorifying suicide.
+Never Take It - It's about not believing what everyone else is saying just because they're saying it.
+Next Semester - It's a very creative take on second chances.
+Nico and the Niners - The extended metaphor of the jumpsuit references depression again.
+No Chances - It's a positive song by TØP.
+Not Today - It's describing insecurities.">Context M-N</input><br>
+    	<input type="radio" name="myradio" 
+	value="Ode to Sleep - It's describing having intense feelings.
+Oh Ms Believer - It's about someone who notices someone else's extreme sadness.
+Oldies Station - It's about making mistakes and only sometimes learning from them.
+One Way - It's creatively describing negative surroundings leading to having negative feelings.
+Overcompensate - Identifying the same message in three languages was helpful. It is, 'This lonely island weaponized me.'. It's in German, French, and Spanish.
+Paladin Strait - It's about struggling against impossible odds.
+Pet Cheetah - It's metaphorical for having and identifying problems.
+Polarize - It's a faster song about the same concept.
+Rawfear - It's a song about negative sources of motivation.
+Ride - It's about falling emotionally another time.
+Robot Voices - It's about internal thoughts in your head that can change your actions.">Context O-R</input><br>
+    	<input type="radio" name="myradio" 
+	value="Routines in the Night - It's about processing negative memories while trying not to sleep.
+Saturday - It's about feeling different on different days of the week. Which can actually happen.
+Screen - The extended metaphor of the train is for struggling sometimes.
+Semi-Automatic - It's about impulsivity and unintended consequences.
+Shy Away - It's about not wanting to have an avoidant personality.
+Smithereens - It's about what someone is willing to sacrifice for someone else.
+Snap Back - It's about reaching a breaking point.
+Stressed Out - It's about how to deal with stress successfully. It's positive again.
+Tally - It's about keeping track of mistakes without actually learning from them.
+Taxi Cab - The taxi cab extended metaphor is for thinking about death.
+Tear in my Heart - 'Annyeonghaseyo' is formal Korean for 'be in peace'. It's about having negative emotions reminding you to appreciate the positive ones.">Context R-T</input><br>
+    	<input type="radio" name="myradio" 
+	value="The Contract - It's about feeling concentrated emotions.
+The Craving (Jenna's version) - It's about having a sadness.
+The Hype - It's also about not believing what everyone else is saying just because they're saying it.
+The Judge - It's describing depression.
+The Outside - It's about feeling confident because you're on the outside.
+The Pantaloon - The chair is an extended metaphor for unfortunate situations. And the effects that can have.
+The Run and Go - It's also about wanting someone else's help without being sure how they can. Which is still possible.
+Trapdoor - It's a very sad song on the self-titled album by Twenty One Pilots.
+Trees - The song itself is fast but the lyrics themselves are sad. That's why the song is interesting to me.
+Truce - It's a very sad song on Vessel from January 8th, 2012.
+We Don't Believe What's on TV - It's slightly different in lyrics than 'House of Gold' but similar in messaging.">Context T-W</input><br>
+    	<input type="radio" name="myradio" 
+	value="A Car, a Torch, a Death - As I start the car and then I begin. To add the miles piled up behind me. I barely feel a smile deep inside me.
+Addict With a Pen - But You specialize in dying, you hear me screaming 'Father!'. And I'm lying here just crying, so wash me with your water.
+Air Catcher - I fall straight down. You've stolen my air catcher. That kept me safe and sound. My parachutes will guide me safely to ground.
+At the Risk of Feeling Dumb - At the risk of feeling dumb, check in. It's not worth the risk of losing a friend.
+Backslide - I don't wanna backslide to where I've started from.
+Bandito - I could take the high road. But I know that I'm going low.
+Bounce Man - Yeah, I told you all along. Running away don't make you wrong.
+Cancer - Baby, I'm just soggy from the chemo. I'm counting down the days to go. This just ain't living.
+Car Radio - And I will try with every rhyme to come across like I am dying. To let you know you need to try to think.
+Center Mass - Shrink it down to nothing and forgetting what the pain's for.
+Chlorine - 'This beat is a chemical.', 'The moment is medical.', and 'Felt I was invincible, you wrapped around my head.'">Lyrics A-C</input><br>
+    	<input type="radio" name="myradio" 
+	value="Choker - Someone else can carve it out out but when you've got the pin. It hurts a little less and you can even push it further in.
+Christmas Saves the Year - With cheap decor and flavored cheer. You rest assured, Christmas saves the year.
+Cottonwood - You tore me up more than you know.
+Cut my Lip - Rust around the rim. Drink it anyway. I cut my lip. Isn't what I want. Blood is on my tongue. I cut my lip.
+Days lie Dormant - My days lie dormant. Cause I just cant afford it. To waste my time inside a place you're not.
+Doubt - Repeating simple phrases. Someone holy insisted. Want the mark he's made on my skin. To mean something to me again.
+Downstairs - Downstairs, I feel better in the cellar. Down there, it's some shelter from the weather.
+Drum Show - He'd rather feel something than nothing at all. So he swerves all around as his head starts to fall.
+Fairly Local - 'I'm evil to the core. What I shouldn't do, I will.' and 'I'm not evil to the core. What I shouldn't do, I will fight.'
+Fake you Out - Before you walk away, theres one more thing I want to say. Our brains are sick but thats okay.
+Fall Away - I'm dying and I'm trying. But believe me, I'm fine. But I'm lying. I'm so very far from fine.">Lyrics C-F</input><br>
+    	<input type="radio" name="myradio" 
+	value="Formidable - Don't know what it was but somehow we played it out in reverse. I'm afraid of you now more than I was at first.
+Friend, Please - I know you want to leave but friend, please don't take your life away from me.
+Garbage - I feel like garbage. I feel like my systems are operating at twenty percent. Or less.
+Goner - Though I'm weak and beaten down, I'll slip away into the sound. The ghost of you is close to me. I'm inside out. You're underneath.
+Good Day - 'Low-key - I'm alright. Would you say you depend on the weather?' and 'I know it's hard to believe me. It's a good day.'
+Guns for Hands - 'That you all have guns. And you never put the safety on.', 'But there's hope out the window. So that's where we'll go.', and 'Interested in putting my fingers to my head.'
+Heathens - You'll never know the psychopath sitting next to you. You'll never know the murderer sitting next to you.
+Heavydirtysoul - Can you save? Can you save my? Can you save my heavy dirty soul?
+Holding Onto You - 'You are surrounding all my surroundings. Twisting that kaleidoscope behind both of my eyes.' and 'You are surrounding all my surroundings. Sounding down the mountain range of my left side brain.'
+Hometown - Where we're from, there's no sun. Our hometown's in the dark. Where we're from, we're no one. Our hometown's in the dark.
+House of Gold - Oh, and since we know that dreams are dead. And life turns plans upon their head.">Lyrics F-H</input><br>
+    	<input type="radio" name="myradio" 
+	value="Johnny Boy - Get up Johnny boy, get up Johnny boy. Get up cause the world has left you lying on the ground.
+Jumpsuit - I can't believe now much I hate. Pressures of a new place roll my way. Jumpsuit, jumpsuit, cover me.
+Lane Boy - Regardless, all these songs Im hearing are so heartless. Don't trust a perfect person and don't trust a song thats flawless.
+Lavish - You're looking real nice, smelling like worth. Walk in like you deserve it.
+Leave the City - The burning is so low its concerning. Cause they know that when it goes out, it's a glorious gone.
+Legend - Then the day that it happened, I recorded this last bit. I look forward to having a lunch with you again.
+Level of Concern - Panic on the brain, world has gone insane. Things are starting to get heavy, mmm...Wondering would you be my little quarantine?
+Levitate - And though I feed on things that fell, you can learn to levitate with just a little help.
+March to the Sea - We're dying with every step we take. We're dying with every breath we make. And I'll fall in line.
+Message Man - Release me from the present, I'm obsessing, all these questions. Why I'm in denial that they tried the suicidal session.
+Midwest Indigo - It's a different blue, it's deeper than it's been. You make me sad and second-guess myself.">Lyrics J-M</input><br>
+    	<input type="radio" name="myradio" 
+	value="Migraine - Full of tidal waves, suicidal crazed lions. They're trying to eat me, blood running down their chin. 
+Morph - Lights, they blink to me. Transmitting things to me. Ones and zeroes. Ergo this symphony. Anybody listening? Ones and zeroes.
+Mulberry Street - 'Keep your sunny days, leave us in the rain.' and 'You can have the weekends, we will live between them'.
+My Blood - When everyone you thought you knew deserts your fight, I'll go with you.
+Navigating - Pardon my delay. Im navigating, Im navigating my head. Disassociate. Im navigating, Im navigating my head.
+Neon Gravestones - Pay some respects for the path that they paved. To life they were dedicated. Now that should be celebrated.
+Never Take It - Now that they know information is just a currency and nothing more. Keep the truth in quotations. Cause they keep lying through their fake teeth.
+Next Semester - 'Can you die of anxiousness?' and 'Can't change what you've done. Start fresh next semester.'
+Nico and the Niners - Im heavy. My jumpsuit is on steady. Im lighter when Im lower. Im higher when Im heavy, oh oh.
+No Chances - With my shoulders squared and my back straight. Got a good base and a loose tongue. Notorious in the octagon now.
+Not Today - Oh, don't you test me, no. Just because I play the piano doesn't mean I, I'm not willin' to take you down. Im sorry.">Lyrics M-N</input><br>
+    	<input type="radio" name="myradio" 
+	value="Ode to Sleep - I'll tell the moon, 'Take this weapon, forged in darkness. Some see a pen, I see a harpoon.'
+Oh Ms Believer - Your shaking shoulders prove that its colder. Inside your head than the winter of dead.
+Oldies Station - Make an oath, then make mistakes. Start a streak you're bound to break. When darkness rolls on you, push on through.
+One Way - 'Me and my scene just ain't gelling. Mmm, someone next to me keeps yelling.' and 'Something must be wrong here. I just don't belong here.'
+Overcompensate - 'Diese kleine unheimliche Insel hat mich zu einer Waffe gemacht.', 'Cette petite Ile etrange a fait de moi une arme.', and 'Esta pequena Isla espeluznante me ha converted en un arma.'
+Paladin Strait - Cant be sure that I'll make it. Even though I'm past the point of no return.
+Pet Cheetah - No, I move slow. I wanna stop time. I'll sit here til I find the problem.
+Polarize - 'Those stairs is where I'll be hiding all my problems.' and 'Domingo en fuego. I think I lost my halo.'
+Rawfear - You know what kills me? Not getting stronger. And now I cant seem to sit still any longer.
+Ride - 'Yeah, I think about the end just way too much. But its fun to fantasize.' and 'Im fallin, so Im taking my time on my ride.'
+Robot Voices - When I met you, I found you safe and warm. And the robot voices would reassure me.">Lyrics O-R</input><br>
+    	<input type="radio" name="myradio" 
+	value="Routines in the Night - While all the worlds asleep, I walk around instead. Through the memories, down the halls of my head.
+Saturday - Slow down on Monday. Not a sound on Wednesday. Might get loud on Friday. But on Saturday, Saturday. Saturday we paint the town.
+Screen - Just like a vertical loco-motive, thats a train. Am I painting the picture thats in my brain? A train from the sky, locomotive my motives are insane.
+Semi-Automatic - Im never what I like, Im double-sided. And I just cant hide. I kinda like it when I make you cry. Cause Im twisted up. Im twisted up. Inside.
+Shy Away - Don't circle the track. Just break the cycle in half.
+Smithereens - For you, ld go. Step to a dude much bigger than me. For you, I know I would get messed up, weigh 153.
+Snap Back - Is it even good for my head to keep track? If Im gonna snap necks, then I gotta snap back.
+Stressed Out - My names Blurryface and I care what you think. Wish we could turn back time. To the good old days. When our momma sang us to sleep.
+Tally - 'I lost my rank and title. I turned my back on it. Sold it all at a discount.' and 'You want a tally, I lost the count.'
+Taxi Cab - Then there were three men up front, all I saw were backs of heads. And then I asked, 'Am I alive and well, or am I dreaming dead?'
+Tear in my Heart - Annyeonghaseyo. Sometimes you gotta bleed to know that you're alive and have a soul.">Lyrics R-T</input><br>
+    	<input type="radio" name="myradio" 
+	value="The Contract - Where I hide my face. pace around. Better try to breathe. pace around. pace around.
+The Craving (Jenna's version) - I don't know why I cant stop crying. I fear Im getting old. And I don't know a lot about you still.
+The Hype - Yeah, they might be talking behind your head. Your exterior world can step off instead.
+The Judge - Three lights are lit but the fourth one's out. I can tell cause it's a bit darker than the last nights bout.
+The Outside - I'm on the outside in the summer heat. You can pay the cover charge, I'm in the street. Little do they know that they cant touch me. Im vibin', vibin'.
+The Pantaloon - 'He's been around so long, he's changed his meaning of a chair, now.' and 'The end cant come soon enough but is it too soon?'
+The Run and Go - Don't wanna give you all my demons. You'll have to watch me struggle from several rooms away. But tonight, I'll need you to stay.
+Trapdoor - He thinks that faith might be dead. Nothing kills a man faster than his own head.
+Trees - I can feel your breath. I can feel my death. I want to know you. I want to see. I want to say hello.
+Truce - You will die, but now your life is free. Take pride in what is sure to die.
+We Don't Believe What's on TV - We don't believe whats on TV. Because it's what we want to see. And what we want, we know we can't believe. We have all learned to kill our dreams.">Lyrics T-W</input><br>
+    	<input type="radio" name="myradio" 
+	value="Addict With a Pen -8 dB
+Air Catcher -8 dB
+Bandito -8 dB
+Choker -8 dB 
+Goner -8 dB
+Jumpsuit -8 dB
+Nico and the Niners -8 dB
+Oh Ms Believer -8 dB 
+Smithereens -8 dB 
+Taxi Cab -8 dB 
+Trapdoor -8 dB">Decibels 8 - Lowest</input><br>
+   	<input type="radio" name="myradio" 
+	value="Car Radio -7 dB
+Chlorine -7 dB
+Christmas Saves the Year -7 dB
+Cottonwood -7 dB
+Downstairs -7 dB
+Formidable -7 dB
+Good Day -7 dB
+House of Gold -7 dB
+Level of Concern -7 dB
+Migraine -7 dB
+Morph -7 dB">Decibels 7 Part One</input><br>
+    	<input type="radio" name="myradio" 
+	value="Mulberry Street -7 dB
+My Blood -7 dB
+No Chances -7 dB
+Oldies Station -7 dB
+Pet Cheetah -7 dB
+The Outside -7 dB
+The Pantaloon -7 dB
+The Run and Go -7 dB">Decibels 7 Part Two</input><br>
+    	<input type="radio" name="myradio" 
+	value="Backslide -6 dB
+Bounce Man -6 dB
+Cut my Lip -6 dB
+Doubt -6 dB
+Fairly Local -6 dB
+Fake You Out -6 dB
+Heavydirtysoul -6 dB
+Hometown -6 dB
+Legend -6 dB
+Levitate -6 dB
+Message Man -6 dB">Decibels 6 Part One</input><br>
+    	<input type="radio" name="myradio" 
+	value="Never Take It -6 dB
+One Way -6 dB
+Overcompensate -6 dB
+Polarize -6 dB
+Robot Voices -6 dB
+Saturday -6 dB
+Screen -6 dB
+Snap Back -6 dB
+Stressed Out -6 dB
+The Hype -6 dB
+Trees -6 dB">Decibels 6 Part Two</input><br>
+    	<input type="radio" name="myradio" 
+	value="A Car, a Torch, a Death -5 dB
+At the Risk of Feeling Dumb -5 dB
+Center Mass -5 dB
+Days Lie Dormant -5 dB
+Drum Show -5 dB
+Fall Away -5 dB
+Garbage -5 dB
+Lane Boy -5 dB
+Lavish -5 dB
+Midwest Indigo -5 dB
+Next Semester -5 dB">Decibels 5 Part One</input><br>
+    	<input type="radio" name="myradio" 
+	value="Not Today -5 dB
+Rawfear -5 dB
+Ride -5 dB
+Routines in the Night -5 dB
+Semi-Automatic -5 dB
+Shy Away -5 dB
+Tally -5 dB
+Tear in my Heart -5 dB
+The Judge -5 dB">Decibels 5 Part Two</input><br>
+    	<input type="radio" name="myradio" 
+	value="Guns for Hands -4 dB
+Holding on to You -4 dB
+Johnny Boy -4 dB
+Navigating -4 dB
+Ode to Sleep -4 dB
+The Contract -4 dB
+We Don’t Believe What’s on TV -4 dB">Decibels 4 - Highest</input><br>
+	<input type="radio" name="myradio"
+	value="Cancer -11 dB
+Friend, Please -9 dB
+Heathens -9 dB Leave the City -12 dB
+March to the Sea -10 dB
+Neon Gravestones -10 dB
+Paladin Strait -9 dB
+The Craving (Jenna’s version) -9 dB
+Truce -14 dB">Decibels Various</input><br>
+<input type="radio" name="myradio" 
+	value="Christmas Saves the Year - C Major
+Days Lie Dormant - C Major
+House of Gold - C Major
+Johnny Boy - C Major
+Legend - C Major
+Migraine - C Major
+Oh Ms Believer - C Major
+Robot Voices - C Major
+Screen - C Major
+Snap Back - C Major
+The Judge - C Major">Keys C Major or Minor - Lowest</input><br>
+	<input type="radio" name="myradio" 
+	value="Cancer - D Major
+Doubt - D Minor 
+Hometown - D Minor
+Message Man - D Minor
+Mulberry Street - D Major
+Not Today - D Major
+Tear in my Heart - D Major">Keys D Major or Minor</input><br>
+	<input type="radio" name="myradio" 
+	value="Bounce Man - E Minor
+Cut My Lip - E Major
+Heathens - E Minor
+Lavish - E Major
+Leave the City - E Minor
+Level of Concern - E Minor
+Next Semester - E Major 
+Stressed Out - E Minor">Keys E Major or Minor</input><br>
+	<input type="radio" name="myradio" 
+	value="A Car, a Torch, a Death - F Major
+Center Mass - F Major
+Fall Away - F Major
+Overcompensate - F Minor
+Paladin Strait - F Major">Keys F Major or Minor</input><br>
+	<input type="radio" name="myradio" 
+	value="Addict With a Pen - G Major
+Choker - G Major
+Friend, Please - G Minor
+Good Day - G Major
+Heavydirtysoul - G Minor
+Lane Boy - G Major
+March to the Sea - G Major
+No Chances - G Major
+Ode to Sleep - G Major
+Pet Cheetah - G Minor
+Tally - G Major
+The Contract - G Minor
+The Craving (Jenna's Version) - G Major
+Truce - G Major">Keys G Major or Minor</input><br>
+	<input type="radio" name="myradio" 
+	value="Car Radio - A Minor
+Cottonwood - A Major
+Never Take It - A Major
+Nico and the Niners - A Minor
+Oldies Station - A Major
+Rawfear - A Major
+Routines in the Night - A Major
+Shy Away - A Minor
+Taxi Cab - A Major
+The Hype - A Major
+The Pantaloon - A Major
+We Don't Believe What's on TV - A Major">Keys A Major or Minor</input><br>
+	<input type="radio" name="myradio" 
+	value="At the Risk of Feeling Dumb - B Minor
+Bandito - B Minor
+Holding on to You - B Major
+Jumpsuit - B Minor
+Navigating - B Minor
+Neon Gravestones - B Minor
+One Way - B Major
+The Outside - B Major">Keys B Major or Minor - Highest</input><br>
+	<input type="radio" name="myradio" 
+	value="Air Catcher - A Flat Major
+Backslide - E Flat Major
+Chlorine - A Sharp Minor
+Downstairs - C Sharp Major
+Drum Show - C Sharp Major
+Fairly Local F Sharp Minor
+Fake You Out - F Sharp Major
+Formidable - F Sharp Minor
+Garbage - C Sharp Major
+Goner - F Sharp Minor
+Guns for Hands - C Sharp Major">Keys Various Part One</input><br>
+	<input type="radio" name="myradio"
+	value="Levitate - F Sharp Minor
+Midwest Indigo - G Sharp Minor
+Morph - G Sharp Minor
+My Blood - C Sharp Major
+Polarize - F Sharp Minor
+Ride - F Sharp Major
+Saturday - A Flat Major
+Semi-Automatic - F Sharp Minor
+Smithereens - F Sharp Major
+The Run and Go - A Sharp Minor
+Trapdoor - C Sharp Minor
+Trees - F Sharp Major">Keys Various Part Two</input><br>
+	<input type="radio" name="myradio" 
+	value="Backslide - 85
+Chlorine - 90
+Christmas Saves the Year - 82
+Days Lie Dormant - 88
+Heathens - 90
+Holding on to You - 90
+Legend - 86
+Morph - 90
+The Hype - 87
+The Judge - 83">Tempo 81-90 - Lowest</input><br>
+	<input type="radio" name="myradio" 
+	value="Garbage - 99
+Goner - 96
+Lavish - 100 even
+Levitate - 93
+One Way - 96
+Overcompensate - 95
+Shy Away - 97
+The Pantaloon - 100 exactly
+The Run and Go - 92">Tempo 91-100</input><br>
+	<input type="radio" name="myradio" 
+	value="Air Catcher - 110
+Center Mass - 108
+Downstairs - 110
+Friend, Please - 110
+My Blood - 109
+Oldies Station - 101
+Pet Cheetah - 110
+Rawfear - 110
+Semi-Automatic - 105
+The Outside - 101">Tempo 101-110</input><br>
+	<input type="radio" name="myradio" 
+	value="Cut my Lip - 112
+Fairly Local - 115
+Fake You Out - 115
+Fall Away - 120
+Hometown - 120
+House of Gold - 115
+Johnny Boy - 115
+Message Man - 120
+Midwest Indigo - 116
+Never Take It - 118
+Not Today - 115">Tempo 111-120 Part One</input><br>
+    	<input type="radio" name="myradio"
+	value="Paladin Strait - 119
+Routines in the Night - 113
+Saturday - 113
+Tear in my Heart - 120
+Truce - 120
+We Don't Believe What's on TV - 120">Tempo 111-120 Part Two</input><br>
+	<input type="radio" name="myradio" 
+	value="Bandito - 127
+Car Radio - 130
+Doubt - 123
+Guns for Hands - 130
+Heavydirtysoul - 130
+Jumpsuit - 127
+Level of Concern - 122
+March to the Sea - 125">Tempo 121-130</input><br>
+    	<input type="radio" name="myradio" 
+	value="A Car, a Torch, a Death - 140
+Addict With a Pen - 140
+Formidable - 137
+Leave the City - 135
+Nico and the Niners - 140
+No Chances - 140
+Snap Back - 140
+Taxi Cab - 138
+The Contract - 135
+Trees - 140">Tempo 131-140</input><br>
+    	<input type="radio" name="myradio" 
+	value="Bounce Man - 142
+Choker - 142
+Good Day - 142
+Neon Gravestones - 149
+Ode to Sleep - 150
+Screen - 150
+Tally - 142
+Trapdoor - 150">Tempo 141-150</input><br>
+    	<input type="radio" name="myradio" 
+	value="At the Risk of Feeling Dumb - 168
+Cancer - 75
+Cottonwood - 151
+Drum Show - 164
+Lane Boy 160
+Migraine - 174
+Mulberry Street - 170
+Navigating - 166
+Next Semester - 175
+Oh Ms Believer - 73
+Polarize - 165">Tempo Various Part One</input><br>
+	<input type="radio" name="myradio"
+	value="Ride - 75
+Robot Voices - 164
+Smithereens - 151
+Stressed Out - 170
+The Craving  (Jenna's version) - 160">Tempo Various Part Two</input></br>
+</p>
+</td>
+<td>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/the-ultimate-skeleton-clique-playlist/pl.u-jV89boLudMjZ24o"></iframe>
+</td>
+</tr>
+<textarea id="mytextarea" cols="11" rows="11"></textarea>
+</table>
+</body>
+</html>
